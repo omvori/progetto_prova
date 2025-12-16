@@ -4,5 +4,11 @@
     "cognome": "Cersosimo",
     "testoRecensione": "Ciao",
     "idProdotto": "4"
+  },
+  {
+    "nome": "Luca",
+    "cognome": "Bordelli",
+    "testoRecensione": "Molte volte mi \u00e8 capitato di riprovare questo piatto, ed il risultato \u00e8 lo stesso : Sublime",
+    "idProdotto": "4"
   }
 ]
