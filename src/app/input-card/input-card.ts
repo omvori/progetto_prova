@@ -5,13 +5,16 @@ import { MatFormField, MatLabel, MatHint, MatError } from "@angular/material/inp
 import { MatProgressSpinner } from "@angular/material/progress-spinner";
 import { MatIcon } from "@angular/material/icon";
 import jsonData from '../backEnd/reviews.json'
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 @Component({
   selector: 'app-input-card',
   templateUrl: './input-card.html', 
   styleUrls: ['./input-card.css'],  
   standalone: true,
-  imports: [FormsModule, CommonModule, MatFormField, MatLabel, MatProgressSpinner, MatIcon]
+  imports: [FormsModule, CommonModule, MatFormField, MatLabel, MatIcon,MatFormFieldModule,MatInputModule,MatIconModule,MatButtonModule]
 })
 export class InputCardComponent { 
   @Output() newReview = new EventEmitter<any>();
@@ -23,7 +26,7 @@ export class InputCardComponent {
   isSubmitting = false;
 
   inviaRecensione() {
-    if (!this.nome || !this.cognome || !this.testoRecensione || this.idProdotto) { 
+    if (!this.nome || !this.cognome || !this.testoRecensione || !this.idProdotto) { 
       alert('Per favore compila tutti i campi');
       return;
     }
@@ -42,6 +45,7 @@ export class InputCardComponent {
     this.nome = '';
     this.cognome = '';
     this.testoRecensione = '';
+    this.idProdotto = '';
     this.isSubmitting = false;
     
     alert('Recensione inviata con successo');

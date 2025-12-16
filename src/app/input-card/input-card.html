@@ -46,10 +46,25 @@
           [(ngModel)]="testoRecensione" 
           name="testoRecensione"
           rows="5"
-          placeholder="..."
+          placeholder="La tua recensione ..."
           required></textarea>
       </mat-form-field>
     </div>
+
+    
+    <div class="id-container">
+      <mat-form-field appearance="fill" class="full-width big-field textarea-field">
+        <mat-label>id Prodotto</mat-label>
+        <textarea class="id-box"
+          matInput
+          id="prodotto" 
+          [(ngModel)]="idProdotto" 
+          name="idProdotto"
+          required></textarea>
+      </mat-form-field>
+    </div>
+
+    
 
     <div class="button-container">
       <a><button 
@@ -64,7 +79,6 @@
         </span>
         
         <ng-template #loading>
-          <mat-spinner diameter="18" class="spinner"></mat-spinner>
           Invio in corso
         </ng-template>
       </button> </a>
