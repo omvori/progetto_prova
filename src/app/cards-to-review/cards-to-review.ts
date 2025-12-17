@@ -1,4 +1,4 @@
-import { Component,Input, OnInit } from '@angular/core';
+import { Component,Input, OnInit,signal } from '@angular/core';
 import {ChangeDetectionStrategy } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
@@ -12,30 +12,21 @@ import { FlaskServer } from '../services/flask-server';
   templateUrl: './cards-to-review.html',
   styleUrl: './cards-to-review.css',
 })
-export class CardsToReview {
+export class CardsToReview implements OnInit {
 
   @Input() reviewedCard?: any
   @Input() reviews: any[] = [];
 
+  isShown = signal(false);
 
-  //reviews: any[] = [];
-
-  //constructor(private flaskService: FlaskServer){}
-
-
-  /*loadReviews(){
-    this.flaskService.getReviews().subscribe({
-      next: (flaskReviews : any[]) =>{
-        this.reviews = flaskReviews
-      }
-    });
+  ngOnInit() {
+    this.toggle()
   }
-    
 
-  refreshRev(){
-    this.loadReviews();
+
+  toggle(){
+    return this.isShown.update((isShown) => !isShown);
   }
-*/
 
 
   getIdReview(idProdotto: string|number): any[]{

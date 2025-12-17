@@ -54,9 +54,9 @@
 
     <div class="id-container">
       <form>
-        <h4>Seleziona il prodotto</h4>
-        <mat-form-field>
-          <mat-label>Prodotto</mat-label>
+        <h4 class="title-over-id">Seleziona il piatto da recensire</h4>
+        <mat-form-field appearance="fill" class="full-width big-field">
+          <mat-label>voglio recensire..</mat-label>
           <mat-select [(ngModel)]="idProdotto" name="food">
             @for (food of foodInMemory; track food) {
               <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
@@ -68,7 +68,8 @@
     </div>
     
     
-    
+    <!-- Vecchio id manuale -->
+
     <!-- <mat-form-field appearance="fill" class="full-width big-field textarea-field">
       <mat-label>id Prodotto</mat-label>
       <textarea class="id-box"

@@ -74,6 +74,31 @@ mat-card-content > div > div {
   margin-bottom: 5px;
 
 }
+
+:host {
+  display: block;
+  height: 200px;
+}
+.enter-container {
+  border: 1px solid #dddddd;
+  margin-top: 1em;
+  padding: 20px 20px 0px 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.enter-animation {
+  animation: slide-fade 1s;
+}
+@keyframes slide-fade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .titlecard {
   text-align: center;
   font-size: 18px;
