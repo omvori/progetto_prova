@@ -50,7 +50,7 @@ A distinctive feature is the integration with **Ollama** (model `gemma3:4b`), wh
 | Data generation | Faker (Italian) + manual lists                       |
 | Base NLP        | spaCy + model `it_core_news_sm`                      |
 | AI (mood)       | Ollama (model `gemma3:4b`)                           |
-| Frontend        | Angular workflow (suggested/used)                    |
+| Frontend        | Angular workflow                     |
 
 ---
 
