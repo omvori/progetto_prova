@@ -1,94 +1,94 @@
-# trustPlate – Recensisci ristoranti con fiducia (backend Flask + AI)
+# trustPlate – Rate restaurants with confidence (Flask + AI backend)
 
-## Panoramica
+## Overview
 
-**trustPlate** è una piattaforma web che permette agli utenti di **lasciare recensioni** sui ristoranti, **visualizzarle** e **interagire** con esse attraverso un sistema di like/dislike (gradimento/contrasto).  
-Il backend è realizzato in **Flask** e offre un’API RESTful. Le recensioni vengono perseguitate in un file JSON.  
-Una funzionalità distintiva è l’integrazione con **Ollama** (modello `gemma3:4b`) che analizza l’**umore generale** delle recensioni di ciascun ristorante, fornendo un riassunto testuale della soddisfazione dei clienti.
-
----
-
-## Funzionalità principali
-
-- **Lista recensioni** – GET `/api/reviews` restituisce tutte le recensioni (con nome, cognome, testo, id ristorante).
-- **Aggiunta recensione** – POST `/api/reviews` crea una nuova recensione (salvata su `reviews.json`).
-- **Like/Dislike** – PUT `/api/reviews/<id>/gradimento` e `/contrasto` incrementano/decrementano i contatori.
-- **Seed dati** – GET `/api/seed/<numero>` genera recensioni casuali (con Faker) usando frasi positive/neutre/negative predefinite.
-- **Analisi NLP con spaCy** – modulo pronto per elaborare testi in italiano (es. estrazione entità, sentiment base).
-- **Analisi umore con Ollama** – endpoint dedicato che interroga il modello `gemma3:4b` per restituire un riassunto del sentiment aggregato di un ristorante.
+**trustPlate** is a web platform that allows users to **leave reviews** on restaurants, **view them**, and **interact** via a like/dislike system (gradimento/contrasto).  
+The backend is built with **Flask** and provides a RESTful API. Reviews are persisted in a JSON file.  
+A distinctive feature is the integration with **Ollama** (model `gemma3:4b`), which analyzes the **general mood** of all reviews for each restaurant, returning a textual summary of customer satisfaction.
 
 ---
 
-## Come funziona (step logici)
+## Main Features
 
-### 1. Gestione recensioni
-- Le recensioni sono memorizzate in una lista globale e persistite su `reviews.json`.
-- Ogni recensione ha: `id`, `nome`, `cognome`, `testoRecensione`, `idRistorante`, `gradimento` (like), `contrasto` (dislike).
-- Le operazioni CRUD di base sono implementate (lettura, scrittura, cancellazione di massa).
-
-### 2. Seed automatico
-- L’endpoint `/api/seed/<numero>` genera recensioni sintetiche con nomi e cognomi casuali (Faker) e testi selezionati casualmente da tre liste predefinite: positive, neutre, negative.
-- Utile per popolare il database di test.
-
-### 3. Like/Dislike
-- Gli utenti (frontend) possono esprimere gradimento o contrarietà su una recensione.
-- Ogni click aggiorna il contatore corrispondente nel file JSON.
-
-### 4. Analisi umore con Ollama (AI)
-- Il frontend (o un chiamante) può richiedere un riassunto dell’umore generale di un ristorante (es. tutti i testi delle recensioni associate a un `idRistorante`).
-- Il backend raccoglie i testi, li invia a Ollama con un prompt appropriato, e restituisce una frase riassuntiva (es. *"I clienti apprezzano il cibo ma lamentano il servizio lento"*).
+- **List reviews** – GET `/api/reviews` returns all reviews (with first name, last name, text, restaurant id).
+- **Add review** – POST `/api/reviews` creates a new review (saved to `reviews.json`).
+- **Like/Dislike** – PUT `/api/reviews/<id>/gradimento` and `/contrasto` increase/decrease counters.
+- **Seed data** – GET `/api/seed/<number>` generates random reviews using Faker and predefined positive/neutral/negative sentences.
+- **NLP with spaCy** – module ready to process Italian text (e.g., entity extraction, basic sentiment).
+- **Mood analysis with Ollama** – dedicated endpoint that queries the `gemma3:4b` model to return an aggregated sentiment summary for a restaurant.
 
 ---
 
-## Stack tecnologico
+## How It Works (logical steps)
 
-| Componente      | Tecnologia utilizzata                               |
-|----------------|------------------------------------------------------|
-| Backend        | Python 3.8+ + Flask                                 |
-| CORS           | flask_cors                                          |
-| Persistenza    | JSON (file `reviews.json`)                          |
-| Generazione dati| Faker (italiano) + liste manuali                    |
-| NLP base       | spaCy + modello `it_core_news_sm`                   |
-| AI (umore)     | Ollama (modello `gemma3:4b`)                        |
-| Frontend (suggerito)| HTML/CSS/JS (React, Vue, o semplice jQuery)    |
+### 1. Review management
+- Reviews are stored in a global list and persisted to `reviews.json`.
+- Each review has: `id`, `nome`, `cognome`, `testoRecensione`, `idRistorante`, `gradimento` (likes), `contrasto` (dislikes).
+- Basic CRUD operations are implemented (read, write, bulk delete).
 
----
+### 2. Automatic seeding
+- The endpoint `/api/seed/<number>` generates synthetic reviews with random first/last names (Faker) and texts randomly chosen from three predefined lists: positive, neutral, negative.
+- Useful for populating the test database.
 
-## API Endpoints (dettaglio)
+### 3. Like / Dislike
+- Users (frontend) can express appreciation or disagreement on a review.
+- Each click updates the corresponding counter in the JSON file.
 
-| Metodo | Endpoint                              | Descrizione |
-|--------|---------------------------------------|-------------|
-| GET    | `/api/isUp`                           | Health check → `{stato: "ok"}` |
-| GET    | `/api/reviews`                        | Restituisce tutte le recensioni |
-| POST   | `/api/reviews`                        | Aggiunge una recensione (body JSON con `nome`, `cognome`, `testoRecensione`, `idRistorante`) |
-| DELETE | `/api/clear`                          | Cancella tutte le recensioni (svuota il JSON) |
-| PUT    | `/api/reviews/<review_id>/gradimento` | Incrementa il like di una recensione (body: `{"incremento": 1}`) |
-| PUT    | `/api/reviews/<review_id>/contrasto`  | Decrementa il dislike (body: `{"decremento": 1}`) |
-| GET    | `/api/seed/<int:numero>`              | Genera `numero` recensioni casuali e le aggiunge |
-| GET    | `/api/sentiment/<ristorante_id>`      | **(da implementare)** – Chiama Ollama per analizzare l’umore delle recensioni di quel ristorante |
-
+### 4. Mood analysis with Ollama (AI)
+- The frontend (or any caller) can request a summary of the general mood of a restaurant (i.e., all review texts associated with an `idRistorante`).
+- The backend collects the texts, sends them to Ollama with an appropriate prompt, and returns a summary phrase (e.g., *"Customers appreciate the food but complain about slow service"*).
 
 ---
 
-## Installazione e avvio (backend)
+## Technology Stack
+
+| Component       | Technology used                                       |
+|-----------------|-------------------------------------------------------|
+| Backend         | Python 3.8+ + Flask                                  |
+| CORS            | flask_cors                                           |
+| Persistence     | JSON file (`reviews.json`)                           |
+| Data generation | Faker (Italian) + manual lists                       |
+| Base NLP        | spaCy + model `it_core_news_sm`                      |
+| AI (mood)       | Ollama (model `gemma3:4b`)                           |
+| Frontend        | Angular workflow (suggested/used)                    |
+
+---
+
+## API Endpoints (detailed)
+
+| Method | Endpoint                                 | Description |
+|--------|------------------------------------------|-------------|
+| GET    | `/api/isUp`                              | Health check → `{stato: "ok"}` |
+| GET    | `/api/reviews`                           | Returns all reviews |
+| POST   | `/api/reviews`                           | Adds a review (JSON body with `nome`, `cognome`, `testoRecensione`, `idRistorante`) |
+| DELETE | `/api/clear`                             | Deletes all reviews (empties the JSON file) |
+| PUT    | `/api/reviews/<review_id>/gradimento`    | Increments like counter (body: `{"incremento": 1}`) |
+| PUT    | `/api/reviews/<review_id>/contrasto`     | Decrements dislike counter (body: `{"decremento": 1}`) |
+| GET    | `/api/seed/<int:numero>`                 | Generates `numero` random reviews and appends them |
+| GET    | `/api/sentiment/<ristorante_id>`         | **(to be implemented)** – Calls Ollama to analyze mood for that restaurant |
+
+---
+
+## Installation and startup (backend)
 
 ```bash
-# Clona il repository
-git clone https://github.com/tuo-username/trustPlate.git
+# Clone the repository
+git clone https://github.com/omvori/TrustPlate.git
 cd trustPlate/backend
 
-# Crea un ambiente virtuale
+# Create a virtual environment
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
 
-# Installa le dipendenze
+# Install dependencies
 pip install flask flask_cors faker spacy
 python -m spacy download it_core_news_sm
 
-# (Opzionale) Installa Ollama e scarica il modello gemma3:4b
-# Segui le istruzioni su https://ollama.com
+# (Optional) Install Ollama and pull the gemma3:4b model
+# Follow instructions at https://ollama.com
 ollama pull gemma3:4b
 
-# Avvia il server Flask
-python app.py   # il file si chiama app.py (o come hai nominato lo script)
+# The project is easily started using the two scripts:
+./1backEndRun.bat
+./2TrustPilotRun.bat
