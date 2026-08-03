@@ -1,6 +1,7 @@
-import { Component,OnInit,ChangeDetectorRef,OnDestroy } from '@angular/core';
+import { Component,OnInit,ChangeDetectorRef,OnDestroy, afterNextRender } from '@angular/core';
 import { FlaskServer } from '../services/flask-server';
 import jsonData from '../backEnd/reviews.json'
+
 
 
 @Component({
@@ -14,9 +15,13 @@ export class HomeComponent implements OnInit,OnDestroy {
   reviews : any [] = [];
   showHero: boolean = true;
 
-  constructor(private flaskService: FlaskServer,private cdr:ChangeDetectorRef){}
+  constructor(
+    private flaskService: FlaskServer,
+    private cdr:ChangeDetectorRef){}
 
 
+
+  
   ngOnInit(){
     if('scrollRestoration' in history){
       history.scrollRestoration ='manual';
@@ -52,13 +57,13 @@ export class HomeComponent implements OnInit,OnDestroy {
         },10)
       
       },1000)
+      
     }
   }
   
 
-  
+  /* rewiews managment*/
   loadReviews(){
-
     this.flaskService.getReviews().subscribe({
       next: (flaskReviews : any []) =>{
         console.log('Recensioni del server:',flaskReviews)
@@ -86,13 +91,17 @@ export class HomeComponent implements OnInit,OnDestroy {
           cognome: newReview.cognome || '',
           testoRecensione: newReview.testoRecensione || '',
           idRistorante: newReview.idRistorante
-        };
+        }
         this.reviews.push(formattedReview);
         this.loadReviews()
         //localStorage.setItem('reviews',JSON.stringify(this.reviews))
-      }
+      },
+      error:(error) => alert("Errore nell'invio della recensione. Ricorda di tenere un linguaggio appropriato!"),
+      complete:() => alert("Recensione inviata con successo ! ")
+      
+      
     })
-    
+      
 
     //localStorage.setItem('reviews',JSON.stringify(this.reviews))
   }

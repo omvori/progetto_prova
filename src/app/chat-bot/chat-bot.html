@@ -1,0 +1,68 @@
+<button 
+  *ngIf="!isOpen" 
+  class="open-button" 
+  (click)="openChat()">
+<svg aria-hidden="true" viewBox="0 0 16 16" class="stellina-ai" width="20px" height="20px" style="margin-left:5px" role="img"><path d="M2 1v2H0v1h2v2h1V4h2V3H3V1H2Zm0 9v2H0v1h2v2h1v-2h2v-1H3v-2H2Zm2.875-1.438L8 9.75l1.188 3.125.562 1.375.563-1.375L11.5 9.75l3.125-1.188L16 8l-1.375-.563L11.5 6.25l-1.188-3.125L9.75 1.75l-.563 1.375L8 6.25 4.875 7.438 3.5 8l1.375.563Zm4.031.75L8.75 9l-.313-.156L6 8l2.438-.844L8.75 7l.156-.313.844-2.437.844 2.438.156.312.313.156L13.5 8l-2.438.844L10.75 9l-.156.313-.844 2.437-.844-2.438Z"></path></svg>
+  Chatta con Reggie
+</button>
+
+<div *ngIf="isOpen" class="chat-container">
+  <header class="chat-header">
+    <div class="header-content">
+      <span class="chat-title">Reggie</span>
+      <span class="chat-status">Il tuo consulente culinario</span>
+    </div>
+    <div class="header-actions">
+      <button class="btn-refresh" (click)="restartConversation()" title="Ricomincia">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
+          <path d="M0 0h24v24H0V0z" fill="none"/>
+          <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+        </svg>
+      </button>
+      <button class="btn-close" (click)="closeChat()">
+        ✕
+      </button>
+    </div>
+  </header>
+
+  <main class="chat-body">
+    <div class="messages-area">
+      <div *ngFor="let msg of messages"
+           class="message"
+           [ngClass]="{
+             'user-message': msg.sender === 'user',
+             'bot-message': msg.sender === 'bot'
+           }">
+        <div class="message-content">{{ msg.text }}</div>
+      </div>
+      <div *ngIf="isLoadingBot" class="message bot-message loading-message">
+        <div class="message-content">
+          <span class="dot">.</span>
+          <span class="dot">.</span>
+          <span class="dot">.</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="chat-footer">
+    <form class="input-form" (submit)="ragChat(); $event.preventDefault()">
+      <input class="message-input"
+             name="query"
+             type="text"
+             [(ngModel)]="query"
+             (keydown.enter)="ragChat()"
+             placeholder="Scrivi un messaggio..."
+             autocomplete="off"
+             [disabled]="isLoadingBot"
+      />
+      <button class="send-button"
+              type="submit"
+              [disabled]="isLoadingBot || !query.trim()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+        </svg>
+      </button>
+    </form>
+  </footer>
+</div>

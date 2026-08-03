@@ -1,0 +1,602 @@
+[
+    {
+        "input": "Cibo davvero ottimo e personale gentilissimo!",
+        "true_label": "positive"
+    },
+    {
+        "input": "La migliore carbonara che abbia mai mangiato in vita mia.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Atmosfera accogliente e piatti curati nei minimi dettagli.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Prezzo onesto per la qualit\u00e0 offerta. Torneremo sicuramente.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Servizio impeccabile e veloce, consigliatissimo!",
+        "true_label": "positive"
+    },
+    {
+        "input": "Una bellissima scoperta, tutto delizioso dall'antipasto al dolce.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Locale molto pulito e ben organizzato, complimenti.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Il pesce era freschissimo, cucinato alla perfezione.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Personale sorridente e disponibile, ci siamo sentiti a casa.",
+        "true_label": "positive"
+    },
+    {
+        "input": "La pizza era leggera e croccante, ingredienti di prima scelta.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Rapporto qualit\u00e0-prezzo imbattibile in questa zona.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Un'esperienza gastronomica indimenticabile, bravi!",
+        "true_label": "positive"
+    },
+    {
+        "input": "Il tiramis\u00f9 fatto in casa \u00e8 qualcosa di spettacolare.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Location suggestiva, perfetta per una cena romantica.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Cucina autentica e sapori genuini, come una volta.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Siamo rimasti colpiti dalla gentilezza del proprietario.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Vasta scelta di vini e ottimi consigli del sommelier.",
+        "true_label": "positive"
+    },
+    {
+        "input": "I piatti sono arrivati caldi e in tempi rapidissimi.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Porzioni abbondanti e prezzi molto competitivi.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Senza dubbio il miglior ristorante della citt\u00e0.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Ambiente raffinato ma non pretenzioso, ci \u00e8 piaciuto molto.",
+        "true_label": "positive"
+    },
+    {
+        "input": "La carne si scioglieva in bocca, cottura eccellente.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Ottima opzione anche per vegetariani, piatti molto creativi.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Servizio attento ma mai invadente, serata perfetta.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Ho festeggiato qui il mio compleanno ed \u00e8 stato tutto magnifico.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Materie prime di altissima qualit\u00e0, si sente la differenza.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Un posto dove si mangia bene e si spende il giusto.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Il menu degustazione \u00e8 un viaggio nei sapori, da provare.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Staff giovane, dinamico e molto preparato.",
+        "true_label": "positive"
+    },
+    {
+        "input": "I dolci sono la fine del mondo, tenetevi uno spazio!",
+        "true_label": "positive"
+    },
+    {
+        "input": "Pulizia top e rispetto delle norme igieniche.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Ci vado spesso e non sbagliano mai un colpo.",
+        "true_label": "positive"
+    },
+    {
+        "input": "L'antipasto della casa \u00e8 ricco e sfizioso.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Hanno accolto il nostro cane con una ciotola d'acqua, molto gentili.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Arredamento moderno e musica di sottofondo piacevole.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Un gioiellino nascosto, felice di averlo trovato.",
+        "true_label": "positive"
+    },
+    {
+        "input": "La pasta fatta in casa ha tutto un altro sapore.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Cocktail buonissimi per accompagnare la cena.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Cura del cliente eccezionale, torneremo presto.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Il risotto era mantecato alla perfezione.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Pausa pranzo veloce ma di qualit\u00e0, bravi.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Adoro questo posto, \u00e8 il mio ristorante preferito.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Ogni piatto \u00e8 una piccola opera d'arte.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Hanno gestito benissimo la nostra tavolata numerosa.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Frittura di pesce leggera e non unta, ottima.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Un esempio di come si dovrebbe gestire un ristorante.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Semplicemente perfetto, non ho altro da aggiungere.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Meritano sicuramente una stella per l'impegno.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Pane e grissini fatti in casa, dettagli che fanno la differenza.",
+        "true_label": "positive"
+    },
+    {
+        "input": "Usciti dal locale con il sorriso e la pancia piena!",
+        "true_label": "positive"
+    },
+    {
+        "input": "Tutto sommato bene, ma mi aspettavo di pi\u00f9 dalle recensioni.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Cibo nella media, nulla di eccezionale ma commestibile.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Buono, ma il servizio \u00e8 stato decisamente troppo lento.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Prezzi leggermente alti per quello che abbiamo mangiato.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Senza infamia e senza lode, un ristorante come tanti.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Posto carino, peccato che i piatti fossero un po' freddi.",
+        "true_label": "negative"
+    },
+    {
+        "input": "La pizza era buona, ma il dolce mi ha deluso.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Personale gentile, ma c'\u00e8 molta disorganizzazione in sala.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Non male per una pausa pranzo veloce, ma non per una cena speciale.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Porzioni un po' scarse rispetto al prezzo pagato.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Il locale \u00e8 molto rumoroso, faticavamo a parlarci.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Ho mangiato bene, ma l'attesa \u00e8 stata eccessiva.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Men\u00f9 con poca scelta, avrei gradito pi\u00f9 variet\u00e0.",
+        "true_label": "negative"
+    },
+    {
+        "input": "La qualit\u00e0 \u00e8 calata rispetto all'ultima volta che sono venuto.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Cucina casalinga, forse un po' troppo semplice.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Il primo era ottimo, il secondo lasciava a desiderare.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Arredamento un po' datato, avrebbe bisogno di una svecchiata.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Rapporto qualit\u00e0-prezzo appena sufficiente.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Si mangia abbastanza bene, ma il parcheggio \u00e8 un incubo.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Camerieri sbrigativi, non ci siamo sentiti molto coccolati.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Un posto onesto, niente di memorabile.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Il conto era giusto, ma il cibo non aveva molto sapore.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Tavoli troppo vicini tra loro, poca privacy.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Buona la materia prima, ma cucinata senza troppa fantasia.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Esperienza altalenante: antipasto top, pasta scotta.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Accettabile se non avete grandi pretese.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Il vino era buono, il resto dimenticabile.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Servizio cortese ma tempi biblici tra una portata e l'altra.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Non so se ci tornerei, ci sono posti migliori in zona.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Locale pulito, ma l'atmosfera \u00e8 un po' fredda.",
+        "true_label": "negative"
+    },
+    {
+        "input": "I fritti erano pesanti, la pizza invece si salvava.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Hanno sbagliato una portata, ma hanno rimediato velocemente.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Classico ristorante turistico, cibo standard.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Buono, ma non indimenticabile.",
+        "true_label": "negative"
+    },
+    {
+        "input": "L'ambiente \u00e8 molto bello, peccato che la cucina non sia all'altezza.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Ho chiesto una variazione al piatto e non sono stato accontentato.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Troppa confusione nel locale, servizio andato in tilt.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Il dolce era stucchevole, il resto della cena ok.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Carne discreta, ma ho mangiato filetti migliori.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Un po' caro per essere una trattoria alla mano.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Il personale correva troppo, mettendoci ansia.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Bagni non pulitissimi, sala invece ordinata.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Piatti presentati bene, ma sapore un po' piatto.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Va bene per una volta, non diventera il mio preferito.",
+        "true_label": "negative"
+    },
+    {
+        "input": "L'acqua costava come il vino, attenzione al conto.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Non \u00e8 stato un disastro, ma nemmeno un successo.",
+        "true_label": "negative"
+    },
+    {
+        "input": "La location merita 10, il cibo 5.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Sufficienza piena, ma non andrei oltre.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Gentili a trovarci il posto senza prenotazione, cibo ok.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Esperienza nella media, n\u00e9 carne n\u00e9 pesce.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Esperienza pessima, non ci torner\u00f2 mai pi\u00f9.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Cibo arrivato freddo e dopo un'ora di attesa.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Personale scortese e poco attento alle esigenze del cliente.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Troppo caro per la scarsa qualit\u00e0 del cibo offerto.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Il locale era sporco e i bagni in condizioni inaccettabili.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Ho chiesto una bistecca ben cotta ed \u00e8 arrivata praticamente cruda.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Da evitare assolutamente, una trappola per turisti.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Servizio disorganizzato, hanno sbagliato le ordinazioni tre volte.",
+        "true_label": "negative"
+    },
+    {
+        "input": "La pasta era scotta e il condimento sembrava in scatola.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Atmosfera sgradevole e proprietario arrogante.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Abbiamo aspettato 40 minuti solo per avere il men\u00f9.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Il pesce aveva un odore strano, non mi sono fidato a mangiarlo.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Porzioni ridicole a prezzi esorbitanti.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Pizza bruciata sotto e cruda sopra, immangiabile.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Il vino sapeva di tappo e non hanno voluto cambiarlo.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Rumore assordante, impossibile parlare con chi si ha di fronte.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Ho trovato un capello nel piatto, disgustoso.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Conto salatissimo e pieno di voci extra non richieste.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Camerieri che ti ignorano completamente.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Qualit\u00e0 degna di una mensa scolastica, ma a prezzi da ristorante.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Non hanno rispettato la mia allergia nonostante l'avessi segnalata.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Tavoli appiccicosi e posate macchiate.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Il fritto misto grondava olio, sono stato male tutta la notte.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Una delusione totale su tutti i fronti.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Maleducazione unica, ci hanno quasi cacciati perch\u00e9 chiudevano.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Non accettano il bancomat nel 2024, assurdo.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Il dolce era vecchio e secco.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Sconsigliatissimo, soldi buttati.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Hanno servito prima tavoli arrivati dopo di noi.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Carne dura come una suola di scarpa.",
+        "true_label": "negative"
+    },
+    {
+        "input": "L'acqua del rubinetto fatta pagare come acqua in bottiglia.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Non c'\u00e8 paragone con la vecchia gestione, \u00e8 peggiorato tantissimo.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Odore di fritto impregnato nei vestiti appena entrati.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Recensioni positive sicuramente false, la realt\u00e0 \u00e8 ben diversa.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Servizio lentissimo, abbiamo saltato il dolce per la disperazione.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Ingredienti chiaramente surgelati e spacciati per freschi.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Il risotto era salatissimo, impossibile da finire.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Nessuna attenzione per i bambini, non avevano nemmeno un seggiolone.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Location trascurata e piena di polvere.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Mi aspettavo molto meglio, sono uscito affamato e arrabbiato.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Caos totale, il cameriere sudava sopra i piatti.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Ho chiesto il conto tre volte prima di riceverlo.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Men\u00f9 unto e illeggibile.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Vergognoso far pagare il coperto 3 euro per un servizio inesistente.",
+        "true_label": "negative"
+    },
+    {
+        "input": "L'antipasto era palesemente riscaldato al microonde.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Non ci metter\u00f2 mai pi\u00f9 piede.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Pessimo rapporto qualit\u00e0-prezzo.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Ci hanno fatto sedere vicino alla porta del bagno, terribile.",
+        "true_label": "negative"
+    },
+    {
+        "input": "La carbonara con la panna \u00e8 un insulto alla cucina.",
+        "true_label": "negative"
+    },
+    {
+        "input": "Se potessi dare zero stelle lo farei.",
+        "true_label": "negative"
+    }
+]

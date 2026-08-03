@@ -29,6 +29,7 @@ import { ProgressSpinner } from './progress-spinner/progress-spinner';
 import { MatProgressSpinner } from "@angular/material/progress-spinner";
 import { Chips } from './chips/chips';
 import {MatChipsModule} from '@angular/material/chips';
+import { ChatBot } from './chat-bot/chat-bot';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import {MatChipsModule} from '@angular/material/chips';
     Toolbar,
     Footer,
     ProgressSpinner,
-    Chips
+    Chips,
+    ChatBot
   ],
   imports: [
     BrowserModule,

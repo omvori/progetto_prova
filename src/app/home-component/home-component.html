@@ -1,4 +1,6 @@
-<section class="hero-section" *ngIf="showHero">
+<section class="hero-section" *ngIf="showHero"
+  tabindex="0",
+  (keydown.space)="scrollToMain()"; $event.preventDefault()>
   <div class="hero-content">
     <h1 class="hero-title">TrustPlate</h1>
     <p class="hero-subtitle">recensisci i tuoi ristoranti preferiti, o consulta le  loro recensioni da tutto il mondo</p>
@@ -22,6 +24,11 @@
       </div>
     </header>
     
+
+<app-chat-bot></app-chat-bot>
+
+
+  
 
  <div class="content-container" animate.enter="enter-animation">
    <div class="content">

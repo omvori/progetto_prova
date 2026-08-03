@@ -1,0 +1,150 @@
+{"input": "Cibo davvero ottimo e personale gentilissimo!", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "La migliore carbonara che abbia mai mangiato in vita mia.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Atmosfera accogliente e piatti curati nei minimi dettagli.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Prezzo onesto per la qualità offerta. Torneremo sicuramente.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Servizio impeccabile e veloce, consigliatissimo!", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Una bellissima scoperta, tutto delizioso dall'antipasto al dolce.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Locale molto pulito e ben organizzato, complimenti.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Il pesce era freschissimo, cucinato alla perfezione.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Personale sorridente e disponibile, ci siamo sentiti a casa.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "La pizza era leggera e croccante, ingredienti di prima scelta.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Rapporto qualità-prezzo imbattibile in questa zona.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Un'esperienza gastronomica indimenticabile, bravi!", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Il tiramisù fatto in casa è qualcosa di spettacolare.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Location suggestiva, perfetta per una cena romantica.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Cucina autentica e sapori genuini, come una volta.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Siamo rimasti colpiti dalla gentilezza del proprietario.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Vasta scelta di vini e ottimi consigli del sommelier.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "I piatti sono arrivati caldi e in tempi rapidissimi.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Porzioni abbondanti e prezzi molto competitivi.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Senza dubbio il miglior ristorante della città.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Ambiente raffinato ma non pretenzioso, ci è piaciuto molto.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "La carne si scioglieva in bocca, cottura eccellente.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Ottima opzione anche per vegetariani, piatti molto creativi.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Servizio attento ma mai invadente, serata perfetta.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Ho festeggiato qui il mio compleanno ed è stato tutto magnifico.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Materie prime di altissima qualità, si sente la differenza.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Un posto dove si mangia bene e si spende il giusto.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Il menu degustazione è un viaggio nei sapori, da provare.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Staff giovane, dinamico e molto preparato.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "I dolci sono la fine del mondo, tenetevi uno spazio!", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Pulizia top e rispetto delle norme igieniche.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Ci vado spesso e non sbagliano mai un colpo.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "L'antipasto della casa è ricco e sfizioso.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Hanno accolto il nostro cane con una ciotola d'acqua, molto gentili.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Arredamento moderno e musica di sottofondo piacevole.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Un gioiellino nascosto, felice di averlo trovato.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "La pasta fatta in casa ha tutto un altro sapore.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Cocktail buonissimi per accompagnare la cena.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Cura del cliente eccezionale, torneremo presto.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Il risotto era mantecato alla perfezione.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Pausa pranzo veloce ma di qualità, bravi.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Adoro questo posto, è il mio ristorante preferito.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Ogni piatto è una piccola opera d'arte.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Hanno gestito benissimo la nostra tavolata numerosa.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Frittura di pesce leggera e non unta, ottima.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Un esempio di come si dovrebbe gestire un ristorante.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Semplicemente perfetto, non ho altro da aggiungere.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Meritano sicuramente una stella per l'impegno.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Pane e grissini fatti in casa, dettagli che fanno la differenza.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Usciti dal locale con il sorriso e la pancia piena!", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["positive"]}]}}
+{"input": "Tutto sommato bene, ma mi aspettavo di più dalle recensioni.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Cibo nella media, nulla di eccezionale ma commestibile.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Buono, ma il servizio è stato decisamente troppo lento.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Prezzi leggermente alti per quello che abbiamo mangiato.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Senza infamia e senza lode, un ristorante come tanti.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Posto carino, peccato che i piatti fossero un po' freddi.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "La pizza era buona, ma il dolce mi ha deluso.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Personale gentile, ma c'è molta disorganizzazione in sala.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Non male per una pausa pranzo veloce, ma non per una cena speciale.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Porzioni un po' scarse rispetto al prezzo pagato.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Il locale è molto rumoroso, faticavamo a parlarci.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Ho mangiato bene, ma l'attesa è stata eccessiva.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Menù con poca scelta, avrei gradito più varietà.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "La qualità è calata rispetto all'ultima volta che sono venuto.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Cucina casalinga, forse un po' troppo semplice.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Il primo era ottimo, il secondo lasciava a desiderare.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Arredamento un po' datato, avrebbe bisogno di una svecchiata.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Rapporto qualità-prezzo appena sufficiente.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Si mangia abbastanza bene, ma il parcheggio è un incubo.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Camerieri sbrigativi, non ci siamo sentiti molto coccolati.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Un posto onesto, niente di memorabile.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Il conto era giusto, ma il cibo non aveva molto sapore.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Tavoli troppo vicini tra loro, poca privacy.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Buona la materia prima, ma cucinata senza troppa fantasia.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Esperienza altalenante: antipasto top, pasta scotta.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Accettabile se non avete grandi pretese.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Il vino era buono, il resto dimenticabile.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Servizio cortese ma tempi biblici tra una portata e l'altra.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Non so se ci tornerei, ci sono posti migliori in zona.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Locale pulito, ma l'atmosfera è un po' fredda.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "I fritti erano pesanti, la pizza invece si salvava.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Hanno sbagliato una portata, ma hanno rimediato velocemente.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Classico ristorante turistico, cibo standard.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Buono, ma non indimenticabile.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "L'ambiente è molto bello, peccato che la cucina non sia all'altezza.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Ho chiesto una variazione al piatto e non sono stato accontentato.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Troppa confusione nel locale, servizio andato in tilt.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Il dolce era stucchevole, il resto della cena ok.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Carne discreta, ma ho mangiato filetti migliori.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Un po' caro per essere una trattoria alla mano.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Il personale correva troppo, mettendoci ansia.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Bagni non pulitissimi, sala invece ordinata.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Piatti presentati bene, ma sapore un po' piatto.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Va bene per una volta, non diventera il mio preferito.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "L'acqua costava come il vino, attenzione al conto.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Non è stato un disastro, ma nemmeno un successo.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "La location merita 10, il cibo 5.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Sufficienza piena, ma non andrei oltre.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Gentili a trovarci il posto senza prenotazione, cibo ok.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Esperienza nella media, né carne né pesce.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Esperienza pessima, non ci tornerò mai più.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Cibo arrivato freddo e dopo un'ora di attesa.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Personale scortese e poco attento alle esigenze del cliente.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Troppo caro per la scarsa qualità del cibo offerto.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Il locale era sporco e i bagni in condizioni inaccettabili.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Ho chiesto una bistecca ben cotta ed è arrivata praticamente cruda.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Da evitare assolutamente, una trappola per turisti.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Servizio disorganizzato, hanno sbagliato le ordinazioni tre volte.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "La pasta era scotta e il condimento sembrava in scatola.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Atmosfera sgradevole e proprietario arrogante.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Abbiamo aspettato 40 minuti solo per avere il menù.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Il pesce aveva un odore strano, non mi sono fidato a mangiarlo.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Porzioni ridicole a prezzi esorbitanti.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Pizza bruciata sotto e cruda sopra, immangiabile.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Il vino sapeva di tappo e non hanno voluto cambiarlo.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Rumore assordante, impossibile parlare con chi si ha di fronte.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Ho trovato un capello nel piatto, disgustoso.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Conto salatissimo e pieno di voci extra non richieste.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Camerieri che ti ignorano completamente.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Qualità degna di una mensa scolastica, ma a prezzi da ristorante.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Non hanno rispettato la mia allergia nonostante l'avessi segnalata.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Tavoli appiccicosi e posate macchiate.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Il fritto misto grondava olio, sono stato male tutta la notte.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Una delusione totale su tutti i fronti.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Maleducazione unica, ci hanno quasi cacciati perché chiudevano.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Non accettano il bancomat nel 2024, assurdo.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Il dolce era vecchio e secco.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Sconsigliatissimo, soldi buttati.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Hanno servito prima tavoli arrivati dopo di noi.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Carne dura come una suola di scarpa.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "L'acqua del rubinetto fatta pagare come acqua in bottiglia.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Non c'è paragone con la vecchia gestione, è peggiorato tantissimo.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Odore di fritto impregnato nei vestiti appena entrati.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Recensioni positive sicuramente false, la realtà è ben diversa.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Servizio lentissimo, abbiamo saltato il dolce per la disperazione.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Ingredienti chiaramente surgelati e spacciati per freschi.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Il risotto era salatissimo, impossibile da finire.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Nessuna attenzione per i bambini, non avevano nemmeno un seggiolone.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Location trascurata e piena di polvere.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Mi aspettavo molto meglio, sono uscito affamato e arrabbiato.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Caos totale, il cameriere sudava sopra i piatti.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Ho chiesto il conto tre volte prima di riceverlo.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Menù unto e illeggibile.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Vergognoso far pagare il coperto 3 euro per un servizio inesistente.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "L'antipasto era palesemente riscaldato al microonde.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Non ci metterò mai più piede.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Pessimo rapporto qualità-prezzo.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Ci hanno fatto sedere vicino alla porta del bagno, terribile.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "La carbonara con la panna è un insulto alla cucina.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}
+{"input": "Se potessi dare zero stelle lo farei.", "output": {"classifications": [{"task": "sentiment", "labels": ["positive", "negative", "offensive"], "true_label": ["negative"]}]}}

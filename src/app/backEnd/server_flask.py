@@ -1,12 +1,29 @@
 from flask_cors import CORS
 import json
 import os 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request,Blueprint
 import uuid
 from faker import Faker
 import random
 import spacy
 from spacy.lang.it.examples import sentences
+from ollama import chat
+from gliner2 import GLiNER2
+import requests
+
+#RAG Service setup
+RAG_SERVICE_URL = "http://localhost:5001"
+
+
+#gliner2 modello di text extraction
+extractor = GLiNER2.from_pretrained("fastino/gliner2-base-v1")
+extractor.load_adapter("/home/omori/Scrivania/ProjS/trainingGliner/hateSpeechITA_v5finetuned/final")
+        
+if extractor.has_adapter:
+    print("Adapter caricato correttamente")
+else:
+    print("Adapter mancante/danneggiato")
+
 
 
 app = Flask(__name__)
@@ -15,12 +32,17 @@ CORS(app)
 review_list = []
 
 
-#*NLP (natural language processing) delle recensioni# 
-
-nlp = spacy.load("it_core_news_sm")
+#*NLP (natural language processing) delle recensioni
 
 
-1
+def nlp_analyze(text):
+    nlp = spacy.load("it_core_news_sm")
+    
+    doc = nlp(text)
+
+    return doc 
+
+
 
 
 @app.route('/api/isUp',methods=['GET'])
@@ -56,15 +78,49 @@ def add_review():
             "gradimento": 0,
             "contrasto" : 0
         }
-        review_list.append(nuova_recensione)
-
-        with open('reviews.json','w') as file:
-            json.dump(review_list,file,indent=2)
         
-        return jsonify(nuova_recensione),201
+        print("model is thinking..")
+        
+        #gliner implementation
+  
 
+        schema = extractor.create_schema().classification(
+            "sentiment",
+            ["positive","negative","offensive"],
+            multi_label = True,
+            cls_threshold = 0.3
+        )
+
+
+        text = data.get('testoRecensione')
+        results = extractor.extract(text,schema,include_confidence=True)
+        print(results)
+
+        offensive_score = next(
+         (item["confidence"] for item in results.get('sentiment',[]) if item["label"] == "offensive"),
+            0
+        )
+
+        if offensive_score > 0.5 :
+            return jsonify({"error":"Recensione Bloccata per contenuto offensivo"}),403
+
+        else:
+            
+            review_list.append(nuova_recensione)
+            
+            with open('reviews.json','w') as file:
+                json.dump(review_list,file,indent=2)
+            
+            return jsonify(nuova_recensione),201
+
+    
     except Exception as e:
         return jsonify({"error":str(e)}),500
+
+
+        
+
+
 
 #cancello recensioni
 @app.route('/api/clear',methods=['DELETE'])
@@ -143,6 +199,7 @@ def update_contrasto(review_id):
     
     except Exception as e:
         return jsonify({"error":str(e)}),500
+        
 
 #METODO PER POPOLARE IL SITO, USARE CON CAUTELA#
 @app.route('/api/seed/<int:numero>', methods=['GET'])
@@ -307,6 +364,40 @@ def seed_data(numero):
     "Se potessi dare zero stelle lo farei."
     ]
 
+    #jsonl dump per il traning di GLiNER2
+    labeled_reviews = []
+
+    for testo in positive:
+        labeled_reviews.append({"input": testo,"true_label":"positive"})
+
+    for testo in neutre:
+        labeled_reviews.append({"input":testo,"true_label":"negative"})
+
+    for testo in negative:
+        labeled_reviews.append({"input":testo,"true_label":"negative"})
+
+    with open("reviews_to_train.json","w",encoding="utf-8") as json_file:
+        json.dump(labeled_reviews,json_file,indent=4)
+
+    with open("reviews_train.jsonl","w",encoding="utf-8") as file:
+        for row in labeled_reviews:
+            text = row['input']
+            label = row['true_label']
+
+
+            record = {
+                "input":text,
+                "output":{
+                    "classifications": [{
+                        "task":"sentiment",
+                        "labels":["positive","negative","offensive"],
+                        "true_label":[label]
+                    }]
+                }
+            }
+
+            file.write(json.dumps(record,ensure_ascii=False)+"\n")
+
     umori = positive + neutre + negative
 
 
@@ -323,14 +414,36 @@ def seed_data(numero):
         review_list.append(rec)
         nuove.append(rec)
 
-    # Scrivi tutto nel file
     with open('reviews.json', 'w') as file:
         json.dump(review_list, file, indent=2)
 
     return jsonify({"message": f"Aggiunte {numero} recensioni sintetiche", "data": nuove}), 201
+
+@app.route("/api/rag/chat",methods=["POST"])
+def rag_chat():
+    body = request.get_json(silent=True) or {}
+    query = body.get("query","").strip()
+
+    if not query:
+        return jsonify({"error":"errore nell'invio della query"}),400
+    
+    try:
+        resp = requests.post(
+            f"{RAG_SERVICE_URL}/chat",
+            json={"query":query},
+            timeout=120
+        )
+        resp.raise_for_status()
+
+    except requests.RequestException as e:
+        return jsonify({"error":"Servizio non disponibile al momento,riprovare più tardi"}),502
+    
+    return jsonify(resp.json())
 
 
 if __name__ == '__main__':
     load_reviews()
     print("Server flask in esecuzione")
     app.run(debug=True)
+
+

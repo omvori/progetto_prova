@@ -70,7 +70,7 @@ export class InputCardComponent {
     this.idRistorante = '';
     this.isSubmitting = false;
     
-    alert('Recensione inviata con successo');
+    //alert('Recensione inviata con successo');
 
     return recensione
   }

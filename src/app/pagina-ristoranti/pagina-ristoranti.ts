@@ -94,11 +94,10 @@ export class PaginaRistoranti implements OnInit{
       }
     });
 
-
-
-    
-
-
   }
+
+
+
+
 
 }
